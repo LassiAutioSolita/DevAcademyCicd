@@ -39,3 +39,4 @@ jobs:
 
       - name: What is the npm version?
         run: npm --version
+        continue-on-error: true
