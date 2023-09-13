@@ -32,5 +32,10 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, $LAST_NAME!
 
+      - name: Error?
+        run: |
+          echo Hups!
+          exit 1
+
       - name: What is the npm version?
         run: npm --version
