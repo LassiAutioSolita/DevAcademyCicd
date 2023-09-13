@@ -33,10 +33,10 @@ jobs:
         run: echo Hello, $LAST_NAME!
 
       - name: Error?
+        continue-on-error: true
         run: |
           echo Hups!
           exit 1
 
       - name: What is the npm version?
         run: npm --version
-        continue-on-error: true
